@@ -9,7 +9,6 @@ License:	GPL
 Url:		http://colordiff.sourceforge.net/
 Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.bz2  
 Group:		Development/Other
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	diffutils
 Requires:	less
 Requires:	perl
