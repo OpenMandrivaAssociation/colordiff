@@ -1,5 +1,5 @@
 %define name	colordiff
-%define version	1.0.6
+%define version	1.0.7
 
 Summary:	Wrapper for diff that produces output with syntax highlighting
 Name:		%{name}
@@ -7,20 +7,20 @@ Version:	%{version}
 Release:	%mkrel 1
 License:	GPL
 Url:		http://colordiff.sourceforge.net/
-Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.bz2  
+Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.bz2
 Group:		Development/Other
 Requires:	diffutils
 Requires:	less
 Requires:	perl
 Requires:	webfetch
 BuildArch:	noarch
- 
+
 %description
-The Perl script colordiff is a wrapper for diff. It produces the same 
+The Perl script colordiff is a wrapper for diff. It produces the same
 output but with syntax highlighting. Color schemes can be customized.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 
@@ -29,7 +29,7 @@ output but with syntax highlighting. Color schemes can be customized.
 %{__install} -m 755 -D colordiff.pl %{buildroot}%{_bindir}/colordiff
 %{__install} -m 644 -D colordiff.1 %{buildroot}%{_mandir}/man1/colordiff.1
 %{__sed} -i -e 's/banner=yes/banner=no/' colordiffrc*
-%{__install} -m 644 -D colordiffrc %{buildroot}%{_sysconfdir}/colordiffrc 
+%{__install} -m 644 -D colordiffrc %{buildroot}%{_sysconfdir}/colordiffrc
 
 %clean
 %{__rm} -rf %{buildroot}
