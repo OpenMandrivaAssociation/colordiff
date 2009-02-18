@@ -1,10 +1,10 @@
 %define name	colordiff
-%define version	1.0.7
+%define version	1.0.8a
 
 Summary:	Wrapper for diff that produces output with syntax highlighting
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 3
+Release:	%mkrel 1
 License:	GPL
 Url:		http://colordiff.sourceforge.net/
 Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.bz2
