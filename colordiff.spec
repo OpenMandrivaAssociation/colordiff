@@ -1,5 +1,5 @@
 %define name	colordiff
-%define version	1.0.9
+%define version	1.0.10
 
 Summary:	Wrapper for diff that produces output with syntax highlighting
 Name:		%{name}
@@ -9,7 +9,6 @@ License:	GPLv2+
 Url:		http://colordiff.sourceforge.net/
 Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.gz
 Group:		Development/Other
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	diffutils
 Requires:	less
 Requires:	perl
@@ -32,11 +31,7 @@ output but with syntax highlighting. Color schemes can be customized.
 %{__sed} -i -e 's/banner=yes/banner=no/' colordiffrc*
 %{__install} -m 644 -D colordiffrc %{buildroot}%{_sysconfdir}/colordiffrc
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
-%defattr(-, root, root)
 %doc BUGS CHANGES colordiffrc-lightbg COPYING INSTALL README TODO
 %{_bindir}/cdiff
 %{_bindir}/%{name}
