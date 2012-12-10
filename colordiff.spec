@@ -39,3 +39,36 @@ output but with syntax highlighting. Color schemes can be customized.
 %{_mandir}/man1/colordiff*
 
 
+
+
+%changelog
+* Wed Jun 13 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.10-2mdv2012.0
++ Revision: 805393
+- version update 1.0.10
+
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0.9-2mdv2011.0
++ Revision: 617405
+- the mass rebuild of 2010.0 packages
+
+* Thu Aug 13 2009 Emmanuel Andry <eandry@mandriva.org> 1.0.9-1mdv2010.0
++ Revision: 416111
+- New version 1.0.9
+
+* Wed Feb 18 2009 Jérôme Soyer <saispo@mandriva.org> 1.0.8a-1mdv2009.1
++ Revision: 342395
+- New upstream release
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.0.7-3mdv2009.0
++ Revision: 243596
+- rebuild
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Jérôme Soyer <saispo@mandriva.org> 1.0.7-1mdv2008.1
++ Revision: 132040
+- New release
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
