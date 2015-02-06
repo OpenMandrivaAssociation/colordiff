@@ -4,7 +4,7 @@
 Summary:	Wrapper for diff that produces output with syntax highlighting
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 2
+Release:	3
 License:	GPLv2+
 Url:		http://colordiff.sourceforge.net/
 Source0:	http://download.sourceforge.net/sourceforge/colordiff/%{name}-%{version}.tar.gz
