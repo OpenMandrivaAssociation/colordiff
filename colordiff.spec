@@ -29,7 +29,7 @@ output but with syntax highlighting. Color schemes can be customized.
 %{__install} -m 644 -D colordiffrc %{buildroot}%{_sysconfdir}/colordiffrc
 
 %files
-%doc BUGS CHANGES colordiffrc-lightbg COPYING INSTALL README TODO
+%doc BUGS CHANGES colordiffrc-lightbg COPYING INSTALL README
 %{_bindir}/cdiff
 %{_bindir}/%{name}
 %config(noreplace) %{_sysconfdir}/colordiffrc
