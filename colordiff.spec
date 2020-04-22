@@ -1,6 +1,6 @@
 Summary:	Wrapper for diff that produces output with syntax highlighting
-Name:		  colordiff
-Version:	1.0.18
+Name:     colordiff
+Version:	1.0.19
 Release:	1
 License:	GPLv2+
 Url:		https://www.colordiff.org/
